@@ -22,7 +22,7 @@ Grandes telas: acima de 1200px
     width: 90vw;
   }
   main::after {
-    content: 'Essa impressão foi feita através de www.slaonde.com'
+    content: 'Essa impressão foi feita através de www.slaonde.com';
     text-decoration: overline;
   }
   h1{
@@ -55,7 +55,7 @@ Grandes telas: acima de 1200px
 }
 @media screen (min-width: 1200px) { /* GRANDES TELAS */
   body {
-    background-image: url('../imagens/back-tv.jpg)';
+    background-image: url('../imagens/back-tv.jpg');
   }
   main {
     width: 700px;
