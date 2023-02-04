@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* todas as demais mideas */
+
+/* O DE CELULAR JA ESTA APLICADO NO STYLE ESTA SENDO USADO COMO O ALL ENTÃO NESSE CASO NAO PRECISA COLOCAR */
+
+/* Typical Device Breakpoints
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 922px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+@media print { /* IMPRESSÃO */
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+  body {
+    background-image: url('../imagens/back-print.jg'); /* em impressora nao imprimi background */
+  }
+  main {
+    border: 2px solid black;
+    width: 90vw;
+  }
+  main::after {
+    content: 'Essa impressão foi feita através de www.slaonde.com'
+    text-decoration: overline;
+  }
+  h1{
+    text-shadow: none;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+  body {
+    background-image: url('../imagens/back-tablet.jpg');
+  }
+  /* AQUI VC TEM Q PASSAR O DISPLAY BLOCK PARA OQ VC QUEIRA Q APAREÇA */
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print {display: none; }
+    img#desk { display: none; }
+    img#tv { display: none; }
+  
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+  body {
+    background-image: url('../imagens/icon-pc.jpg');
+  }
+  img#phone { display: none; }
+  img#tablet { display: none; }
+  img#print {display: none; }
+  img#desk { display: block; }
+  img#tv { display: none; }
+}
+@media screen (min-width: 1200px) { /* GRANDES TELAS */
+  body {
+    background-image: url('../imagens/back-tv.jpg)';
+  }
+  main {
+    width: 700px;
+  }
+  img#phone { display: none; }
+  img#tablet { display: none; }
+  img#print {display: none; }
+  img#desk { display: none; }
+  img#tv { display: block; }
+}
