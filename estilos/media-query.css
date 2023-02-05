@@ -15,7 +15,7 @@ Grandes telas: acima de 1200px
   font-family: 'Courier New', Courier, monospace;
 }
   body {
-    background-image: url('../imagens/back-print.jg'); /* em impressora nao imprimi background */
+    background-image: url('../imagens/back-print.jpg'); /* em impressora nao imprimi background */
   }
   main {
     border: 2px solid black;
@@ -53,7 +53,7 @@ Grandes telas: acima de 1200px
   img#desk { display: block; }
   img#tv { display: none; }
 }
-@media screen (min-width: 1200px) { /* GRANDES TELAS */
+@media screen and (min-width: 1200px) { /* GRANDES TELAS */
   body {
     background-image: url('../imagens/back-tv.jpg');
   }
